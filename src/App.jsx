@@ -245,7 +245,7 @@ function HomePage() {
       </section>
       
       <footer className="bg-black py-8 text-center text-neutral-600 text-xs tracking-widest uppercase border-t border-neutral-900">
-        © 2025 Grand Auditorium • Excellence in Hospitality
+         ©  2025 Grand Auditorium • Excellence in Hospitality
       </footer>
     </div>
   );
