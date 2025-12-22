@@ -3,14 +3,14 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 
 // --- DATA: IMAGES ---
 const fullGallery = [
-  { src: "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac", category: "Reception" },
-  { src: "https://images.unsplash.com/photo-1601482441062-b9f13131f33a", category: "Stage Decor" },
-  { src: "https://images.unsplash.com/photo-1519741497674-611481863552", category: "Audience" },
-  { src: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0", category: "Dining" },
-  { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866", category: "Entrance" },
-  { src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf", category: "Couple" },
-  { src: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800", category: "Haldi Ceremony" },
-  { src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800", category: "Wide Hall View" },
+  { src: "/1e.jpg", category: "Reception" },
+  { src: "/audi.jpg", category: "Stage Decor" },
+  { src: "/couple.jpg", category: "Audience" },
+  { src: "/dining.jpg", category: "Dining" },
+  { src: "/ent.jpg", category: "Entrance" },
+  { src: "/haldu.jpg", category: "Couple" },
+  { src: "/stage.jpg", category: "Haldi Ceremony" },
+  { src: "/1e.jpg", category: "Wide Hall View" },
 ];
 
 // --- 1. HOME PAGE COMPONENT ---
@@ -151,33 +151,42 @@ function HomePage() {
         </div>
       </section>
 
-      {/* --- LOCATION SECTION --- */}
+{/* --- LOCATION SECTION --- */}
       <section id="location" className="py-16 md:py-24 bg-neutral-900 border-t border-amber-900/20">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
-            <div className="space-y-8">
+            <div className="space-y-8" data-aos="fade-right">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">Find Us</h2>
               
-              <div className="bg-neutral-800/50 p-6 rounded-xl border border-amber-900/30 flex items-start gap-5">
+              {/* Address Box */}
+              <div className="bg-neutral-800/50 p-6 rounded-xl border border-amber-900/30 flex items-start gap-5 hover:border-amber-500/50 transition">
                 <span className="text-3xl">📍</span>
                 <div>
                   <h4 className="font-bold text-xl text-amber-400 mb-1">Address</h4>
-                  <p className="text-gray-400 leading-relaxed">Grand Auditorium,<br/>Manjeshwar-Hosangadi Old Highway,<br/>Bangramanjeshwar, Kerala 671323</p>
+                  <p className="text-gray-400 leading-relaxed">
+                    Grand Auditorium,<br/>
+                    Manjeshwar-Hosangadi Old Highway,<br/>
+                    Bangramanjeshwar, Kerala 671323
+                  </p>
                 </div>
               </div>
               
-              <div className="bg-neutral-800/50 p-6 rounded-xl border border-amber-900/30 flex items-start gap-5">
+              {/* Distance Box (UPDATED) */}
+              <div className="bg-neutral-800/50 p-6 rounded-xl border border-amber-900/30 flex items-start gap-5 hover:border-amber-500/50 transition">
                 <span className="text-3xl">🚗</span>
                 <div>
-                  <h4 className="font-bold text-xl text-amber-400 mb-1">Accessibility</h4>
-                  <p className="text-gray-400">Direct Highway Access<br/><span className="text-sm opacity-70">30 mins from Mangalore • 20 mins from Kasaragod</span></p>
+                  <h4 className="font-bold text-xl text-amber-400 mb-2">Accessibility</h4>
+                  <div className="text-gray-400 space-y-1 text-sm md:text-base">
+                    <p>• <span className="text-white font-bold">24 km</span> from Mangalore City</p>
+                    <p>• <span className="text-white font-bold">28 km</span> from Kasaragod Town</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* REAL MAP EMBED */}
-            <div className="h-80 md:h-96 w-full rounded-2xl overflow-hidden border border-amber-900/30 shadow-2xl relative">
+            <div className="h-80 md:h-96 w-full rounded-2xl overflow-hidden border border-amber-900/30 shadow-2xl relative" data-aos="fade-left">
               <iframe 
                 title="Grand Auditorium Location"
                 width="100%" 
