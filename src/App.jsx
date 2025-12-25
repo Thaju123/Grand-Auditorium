@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 
 // --- DATA: IMAGES ---
 const fullGallery = [
-  { src: "/1e.jpg", category: "Reception" },
-  { src: "/audi.jpg", category: "Stage Decor" },
-  { src: "/couple.jpg", category: "Audience" },
-  { src: "/dining.jpg", category: "Dining" },
-  { src: "/ent.jpg", category: "Entrance" },
-  { src: "/haldu.jpg", category: "Couple" },
-  { src: "/stage.jpg", category: "Haldi Ceremony" },
+  { src: "/1e.webp", category: "Reception" },
+  { src: "/haldu.webp", category: "Stage Decor" },
+  { src: "/couple.webp", category: "Audience" },
+  { src: "/dining.webp", category: "Dining" },
+  { src: "/ent.webp", category: "Entrance" },
+  { src: "/haldu.webp", category: "Couple" },
+  { src: "/stage.webp", category: "Haldi Ceremony" },
   { src: "/1e.jpg", category: "Wide Hall View" },
 ];
 
