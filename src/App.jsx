@@ -41,7 +41,7 @@ function HomePage() {
           
           {/* Logo */}
           <span className="text-xl md:text-2xl font-bold text-amber-500 tracking-wider uppercase z-50 relative">
-            Grand Auditorium
+            Grand Auditorium 
           </span>
 
           {/* Desktop Menu (Hidden on Mobile) */}
